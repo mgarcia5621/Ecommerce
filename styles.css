@@ -2,8 +2,9 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Epilogue', sans-serif;
+        /* font-family: 'Epilogue', sans-serif; */
         background: white;
+        font-family: 'DM Sans', sans-serif;
     }
 
     .topnav {
@@ -38,6 +39,8 @@
 
 
       .main-container {
+        overflow: hidden;
+        font-size: 16px;
         width: fit-content;
         position: relative;
         top: 12rem;
@@ -45,17 +48,58 @@
       }
 
       .main-container img {
-        width: 30rem;
+        width: 34rem;
         border-radius: 22px;
       }
 
       .product-content {
+        width: max-content;
         position: relative;
         left: 72rem;
         top: -15rem;
+        padding-left: 5rem;
       }
 
       .product-content h3 {
+        font-size: 16px;
         color: rgb(255, 153, 0);
-        
+        padding-bottom: 19px;
+        text-transform: uppercase;
+      }
+
+      .product-title h1 {
+        font-size: 47px;
+        width: 22rem;
+      }
+
+      .product-info  {
+        width: 27rem;
+        padding-top: 2rem;
+      }
+
+      .price {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      .discount-strike {
+        color: rgb(185, 185, 185);
+        font-size: 19px;
+      }
+
+      .discount-strike:before {
+          position: absolute;
+          content: "";
+          width: 72px;
+          left: 83px;
+          top: 95%;
+          right: 0;
+          border-top: 2px solid;
+          border-color: rgb(185, 185, 185);
+          -webkit-transform: rotate(-25deg);
+          -moz-transform: rotate(-25deg);
+          -ms-transform: rotate(-25deg);
+          -o-transform: rotate(-25deg);
+          transform: rotate(0deg);
+          
       }
