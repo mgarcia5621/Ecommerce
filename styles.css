@@ -211,3 +211,43 @@
         gap: 11px;
         color: white;
       }
+
+
+      /* media queries  */
+
+
+      @media screen and (min-width: 600px) {
+        
+      }
+
+
+      @media screen and (min-width: 2000px) {
+
+      }
+
+
+      @media only screen and (max-width: 599px) {
+      .topnav {
+          display: inline-flex;
+          overflow: hidden;
+          padding-top: 25px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .hamburger {
+          padding-left: 10px;
+        }
+
+        .main-container {
+          display: none;
+        }
+
+        .product-content {
+          display: none;
+        }
+
+        .carousel-img {
+          display: none
+        }
+      }
