@@ -1,4 +1,6 @@
-    *    {
+    *,
+    body,
+    html    {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -217,22 +219,33 @@
 
 
       @media screen and (min-width: 600px) {
-        
+        .hamburger {
+          display: none;
+        }
       }
 
 
       @media screen and (min-width: 2000px) {
-
+          .hamburger {
+            display: none;
+          }
       }
 
 
       @media only screen and (max-width: 599px) {
       .topnav {
-          display: inline-flex;
-          overflow: hidden;
-          padding-top: 25px;
-          justify-content: center;
+          width: fit-content;
+          display: flex;
           align-items: center;
+          align-content: center;
+        }
+
+        .navbar-items {
+          display: flex;
+        }
+        
+        .container {
+          width: 100%;
         }
 
         .hamburger {
