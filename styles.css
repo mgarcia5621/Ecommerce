@@ -239,9 +239,21 @@
           align-items: center;
           align-content: center;
         }
+        .hamburger {
+          padding-left: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .cart-pfp {
+          
+        }
 
         .navbar-items {
           display: flex;
+          display: none;
         }
         
         .container {
