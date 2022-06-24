@@ -242,13 +242,14 @@
         .hamburger {
           padding-left: 6px;
           display: flex;
+          padding-top: 6px;
           align-items: center;
           justify-content: center;
           align-items: center;
         }
 
         .cart-pfp {
-          
+          width: 67vh;
         }
 
         .navbar-items {
