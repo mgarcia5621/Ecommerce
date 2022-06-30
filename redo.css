@@ -50,14 +50,56 @@ html    {
     grid-template-columns: 500px 500px;
     grid-row: auto auto;
     grid-column-gap: 20px;
-    gap: 1rem 87px;
+    gap: 1rem 120px;
     position: absolute;
-    top: 25rem;
+    top: 22rem;
     left: 50rem;
-    grid-row-gap: 20rem;
+    grid-row-gap: 5rem;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
 }
 
 .box1 img {
-    width: 32rem;
+    width: 33rem;
     border-radius: 3rem;
+}
+
+.box2 {
+    padding-right: 55px;
+}
+
+.box3 {
+    width: fit-content;
+}
+
+.img-1 {
+    width: 8rem;
+    border-radius: 1.3rem;
+}
+
+.img-2 {
+    width: 8rem;
+    border-radius: 1.3rem;
+}
+
+.img-3 {
+    width: 8rem;
+    border-radius: 1.3rem;
+}
+
+.img-4 {
+    width: 8rem;
+    border-radius: 1.3rem;
+}
+
+.sneaker-company {
+    /* padding-top: 22px; */
+}
+
+.limitedsneakers  {
+    width: 20rem;
+    padding-top: 22px;
 }
