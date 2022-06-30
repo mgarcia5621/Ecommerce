@@ -46,6 +46,18 @@ html    {
 }
 
 .main-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display:grid;
+    grid-template-columns: 500px 500px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    gap: 1rem 87px;
+    position: absolute;
+    top: 25rem;
+    left: 50rem;
+    grid-row-gap: 20rem;
+}
+
+.box1 img {
+    width: 32rem;
+    border-radius: 3rem;
 }
