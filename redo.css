@@ -96,10 +96,28 @@ html    {
 }
 
 .sneaker-company {
-    /* padding-top: 22px; */
+    padding-top: 80px;
+    color: rgb(235, 152, 0);
 }
 
 .limitedsneakers  {
     width: 20rem;
     padding-top: 22px;
+}
+
+.price-dis {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.price {
+    padding-right: 15px;
+}
+
+.percentage {
+    background: rgb(243, 202, 127);
+    color: rgba(211, 138, 2, 0.911);
+    border-radius: 8px;
+    padding: 4px;
 }
