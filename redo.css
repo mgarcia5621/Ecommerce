@@ -18,13 +18,13 @@ html    {
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
     width: 108rem;
-    position: absolute;
     left: 19rem;
     height: 69px;
-    
+    padding-top: 15px;
+    /* position: absolute; */
+    /* justify-content: center; */
+    /* flex-direction: row; */
 }
 
 .pfp img {
@@ -41,6 +41,11 @@ html    {
 }
 
 .cart-pfp {
+    display: flex;
+    align-items: center;
+}
+
+.cart {
     display: flex;
     align-items: center;
 }
@@ -105,6 +110,16 @@ html    {
     padding-top: 22px;
 }
 
+.sneaker-company {
+    padding-top: 25px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.price h1 {
+    font-size: 2.2em;
+}
+
 .price-dis {
     display: flex;
     align-items: center;
@@ -112,7 +127,8 @@ html    {
 }
 
 .price {
-    padding-right: 15px;
+    padding-right: 20px;
+    font-size: 2.5em;
 }
 
 .percentage {
@@ -120,4 +136,49 @@ html    {
     color: rgba(211, 138, 2, 0.911);
     border-radius: 8px;
     padding: 4px;
+    font-size: 1rem;
 }
+
+.discount-strike {
+    color: lightgrey;
+    padding-top: 15px;
+    padding-bottom: 8rem;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    background: rgb(211, 211, 211);
+    width: fit-content;
+    gap: 35px;
+    border-radius: 8px;
+}
+
+.btn-minus {
+    border: none;
+    padding-left: 10px;
+    background: rgb(211, 211, 211);
+}
+
+.btn-add {
+    border: none;
+    background: rgb(211, 211, 211);
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 600px) {
+    .hamburger {
+      display: none;
+    }
+  }
+
+
+  @media screen and (min-width: 2000px) {
+      .hamburger {
+        display: none;
+      }
+  }
