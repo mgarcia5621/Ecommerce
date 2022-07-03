@@ -12,43 +12,44 @@ html    {
 
 .container {
     width: 100%;
+    height: 100vh;
 }
 
-.topnav {
-    display: flex;
-    height: 100%;
+.log-reg {
+    box-sizing: content-box;
+    float: right;
+    display: flex;  
     align-items: center;
-    width: 108rem;
-    left: 19rem;
-    height: 69px;
-    padding-top: 15px;
-    /* position: absolute; */
-    /* justify-content: center; */
-    /* flex-direction: row; */
 }
 
-.pfp img {
+.register img {
     width: 35px;
 }
 
+.topnav {
+    height: 60px;
+    padding: 10px;
+    padding-top: 20px;
+    width: 100vh;
+    position: relative;
+    left: 40rem;
+}
+
 .topnav a {
-    text-decoration: none;
-    color: rgb(34, 34, 34);
-    text-align: center;
-    padding: 14px 16px;
+    cursor: pointer;
+    float: left;
+    color: black;
+    padding: 14px 18px;
     text-decoration: none;
     font-size: 17px;
+    transition: all 0.2s ease;
 }
 
-.cart-pfp {
-    display: flex;
-    align-items: center;
+.topnav a:hover {
+    color: black;
+    border-radius: 20px;
 }
 
-.cart {
-    display: flex;
-    align-items: center;
-}
 
 .main-container {
     display:grid;
@@ -140,7 +141,7 @@ html    {
 }
 
 .discount-strike {
-    color: lightgrey;
+    color: rgb(192, 190, 190);
     padding-top: 15px;
     padding-bottom: 8rem;
 }
