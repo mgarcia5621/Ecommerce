@@ -151,7 +151,7 @@ html    {
     align-items: center;
     align-content: center;
     flex-direction: row;
-    background: rgb(211, 211, 211);
+    /* background: rgb(211, 211, 211); */
     width: fit-content;
     gap: 35px;
     border-radius: 8px;
@@ -160,12 +160,32 @@ html    {
 .btn-minus {
     border: none;
     padding-left: 10px;
-    background: rgb(211, 211, 211);
+    /* background: rgb(211, 211, 211); */
 }
 
 .btn-add {
     border: none;
-    background: rgb(211, 211, 211);
+    /* background: rgb(211, 211, 211); */
+}
+
+.add-cart {
+    width: 13rem;
+}
+.btn-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add-cart button {
+    background: rgb(219, 145, 7);
+    width: -webkit-fill-available;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 20px;
 }
 
 
