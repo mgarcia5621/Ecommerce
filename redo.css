@@ -191,15 +191,31 @@ html    {
 
 /* Media queries */
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     .hamburger {
       display: none;
     }
-    
+
+    .topnav {
+        display: none;
+    }
+
     .main-container {
         display: grid;
-        
+        grid-template-columns: auto;
     }
+
+    .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1 img {
+        width: 11rem;
+        border-radius: 0px;
+    }
+
   }
 
 
