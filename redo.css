@@ -200,7 +200,7 @@ html    {
     }
 
     .hamburger {
-      /* display: block; */
+      width: fit-content;
     }
     
     .topnav {
@@ -211,12 +211,13 @@ html    {
     }
 
     .active {
-        display: block;
+        display: block;   
     }
 
-    .topnav :not(:first-child) {
+    .nav-container {
         display: none;
     }
+
 
     .main-container {
         display: grid;
