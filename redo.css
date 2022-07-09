@@ -12,7 +12,7 @@ html    {
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 93vh;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -122,9 +122,10 @@ html    {
 }
 
 .price-dis {
-    display: flex;
+    display: grid;
     align-items: center;
     padding-top: 50px;
+    grid-template-columns: auto auto auto;
 }
 
 .price {
@@ -138,12 +139,13 @@ html    {
     border-radius: 8px;
     padding: 4px;
     font-size: 1rem;
+    width: fit-content;
 }
 
 .discount-strike {
     color: rgb(192, 190, 190);
     padding-top: 15px;
-    padding-bottom: 8rem;
+    padding-bottom: 1rem;
 }
 
 .quantity {
@@ -192,6 +194,11 @@ html    {
 /* Media queries */
 
 @media screen and (max-width: 600px) {
+
+    .container {
+        height: 92vh;
+    }
+
     .hamburger {
       /* display: block; */
     }
@@ -199,6 +206,8 @@ html    {
     .topnav {
         left: 0px;
         width: 100vw;
+        display: flex;
+        align-items: center;
     }
 
     .active {
@@ -237,8 +246,27 @@ html    {
         display: none;
     }
 
+    .sneaker-info {
+        padding: 20px;
+    }
+
     .discount-strike {
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 30px;
+    }
+
+    .price-dis {
+        width: 100vw;
+        font-size: 9px;
+        padding: 10px;
+    }
+
+    .price {
+        padding-right: 0px;
+        width: fit-content;
     }
 
     .quantity {
