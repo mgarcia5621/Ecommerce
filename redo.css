@@ -156,6 +156,7 @@ html    {
     /* background: rgb(211, 211, 211); */
     width: fit-content;
     gap: 35px;
+    padding-top: 10rem;
     border-radius: 8px;
 }
 
@@ -201,6 +202,13 @@ html    {
 
     .hamburger {
       width: fit-content;
+    }
+
+    .myLinks {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5px;
+        align-items: flex-start;
     }
     
     .topnav {
@@ -275,6 +283,7 @@ html    {
         flex-direction: column;
         align-items: center;
         align-content: center;
+        padding-top: 0px;
     }
 
   }
