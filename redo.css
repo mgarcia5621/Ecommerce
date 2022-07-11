@@ -207,8 +207,7 @@ html    {
     .myLinks {
         display: flex;
         flex-direction: row-reverse;
-        gap: 5px;
-        align-items: flex-start;
+        align-items: center;
     }
     
     .topnav {
@@ -246,7 +245,7 @@ html    {
     .box2 {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding-right: 0px;
         /* padding-left: 82px; */
     }   
@@ -255,9 +254,6 @@ html    {
         display: none;
     }
 
-    .sneaker-info {
-        padding: 20px;
-    }
 
     .discount-strike {
         padding-bottom: 1rem;
@@ -268,7 +264,7 @@ html    {
     }
 
     .price-dis {
-        width: 100vw;
+        width: 80vw;
         font-size: 9px;
         padding: 10px;
     }
@@ -278,12 +274,29 @@ html    {
         width: fit-content;
     }
 
+    .limitedsneakers {
+        padding-left: 20px;
+    }
+
     .quantity {
         /* display: flex; */
         /* flex-direction: column; */
         align-items: center;
         align-content: center;
         padding-top: 0px;
+        padding-left: 5px;
+    }
+    .navbar2 {
+        display: none;
+    }
+
+    .sneaker-company {
+        padding-left: 20px;
+    }
+
+    .sneaker-info {
+        width: 24em;
+        padding: 20px;
     }
 
   }
