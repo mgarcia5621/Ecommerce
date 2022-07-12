@@ -30,3 +30,11 @@ openNav.addEventListener('click', () => {
   }
   console.log('Clicked hamburger');
 })
+
+
+let button = document.getElementById('btn-add')
+count = 0;
+button.onclick = function() {
+  count+= 1;
+  button.innerHTMl = "0" + count;
+}
