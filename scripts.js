@@ -4,8 +4,9 @@ let mySideNav = document.getElementById("mySidenav")
 let openBtn = document.querySelector(".openbtn")
 let closeBtn = document.querySelector(".navbar2")
 let overlay = document.getElementById('overlay')
+let button = document.getElementById('btn-add')
 const container = document.querySelector('body')
-
+count = 0;
 
 function myFunction() {
   if (openNav.style.display === "block") {
@@ -31,10 +32,7 @@ openNav.addEventListener('click', () => {
   console.log('Clicked hamburger');
 })
 
-
-let button = document.getElementById('btn-add')
-count = 0;
-button.onclick = function() {
-  count+= 1;
-  button.innerHTMl = "0" + count;
-}
+// button.onclick = function() {
+//   count+= 1;
+//   button.innerHTMl = "0" + count;
+// }
