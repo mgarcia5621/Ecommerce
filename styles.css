@@ -301,18 +301,19 @@ html    {
         padding: 20px;
     }
 
-    /* .sidenav {
+    .sidenav {
         height: 100%;
         width: 65%;
         position: fixed;
         z-index: 10;
         top: 0;
+        /* left: 0; */
         background: white;
         overflow-x: hidden;
         padding-top: 60px;
         transition: 0.5s;
     }
-     */
+    
     #overlay {
         position: fixed; 
         display: none; 
