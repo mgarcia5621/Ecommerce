@@ -202,6 +202,9 @@ html    {
 
     .hamburger {
       width: fit-content;
+      position: fixed;
+      z-index: 3;
+    
     }
 
     .myLinks {
