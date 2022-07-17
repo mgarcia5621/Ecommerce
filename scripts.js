@@ -1,18 +1,18 @@
+const container = document.querySelector('body');
+const plus = document.querySelector('.plus');
 let openNav = document.querySelector(".hamburger");
 let closeNav = document.getElementById("mySideNav");
 let mySideNav = document.getElementById("mySidenav");
 let openBtn = document.querySelector(".openbtn");
 let closeBtn = document.querySelector(".navbar2");
 let overlay = document.getElementById('overlay');
-const container = document.querySelector('body');
+let num = document.querySelector('.num');
+let minus = document.querySelector('.minus');
+let a = 1;
 
-const plus = document.querySelector('.plus'),
-minus = document.querySelector('.minus'),
-a = 1;
-num = document.querySelector('.num'),
 plus.addEventListener("click", () => {
     a++;
-    console.log("a");
+    console.log(a);
 });
 
 function myFunction() {
