@@ -33,9 +33,9 @@ html    {
     height: 60px;
     padding: 10px;
     padding-top: 20px;
-    width: 100vh;
-    position: relative;
-    left: 40rem;
+    width: 100vw;
+    /* position: relative; */
+    /* left: 40rem; */
 }
 
 .topnav a {
@@ -60,7 +60,7 @@ html    {
     grid-row: auto auto;
     grid-column-gap: 20px;
     gap: 2rem 220px;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .carousel {
@@ -377,9 +377,15 @@ html    {
       .hamburger {
         display: none;
       }
+      .topnav {
+        display: flex;
+      }
+      .topnav {
+        width: 70vw;
+    }
 
 
-      @media only screen and (max-width: 599px) {
+      @media only screen and (min-width: 600px) {
         .hamburger {
             display: none;
         }
