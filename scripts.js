@@ -5,28 +5,15 @@ let openBtn = document.querySelector(".openbtn");
 let closeBtn = document.querySelector(".navbar2");
 let overlay = document.getElementById('overlay');
 const container = document.querySelector('body');
-let totalCount = document.getElementById('decrement-btn');
-let incrementCount = document.getElementById('increment-btn')
-let count = 0
-let counter = 0;
-let decrementCount = 0;
 
-totalCount.innerHTML = count;
-const handleIncrement = () => {
-  count++;
-  totalCount.innerHTML = count;
-}
-const handleDecrement = () => {
-  count--;
-  totalCount.innerHTML = count;
-  console.log(count)
-};
-
-function handleIncrement() {
-  incrementCount.addEventListener("click", handleIncrement);
-  decrementCount.addEventListener("click", handleDecrement);
-}
-
+const plus = document.querySelector('.plus'),
+minus = document.querySelector('.minus'),
+a = 1;
+num = document.querySelector('.num'),
+plus.addEventListener("click", () => {
+    a++;
+    console.log("a");
+});
 
 function myFunction() {
   if (openNav.style.display === "block") {
