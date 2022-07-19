@@ -8,12 +8,25 @@ let closeBtn = document.querySelector(".navbar2");
 let overlay = document.getElementById('overlay');
 let num = document.querySelector('.num');
 let minus = document.querySelector('.minus');
-let a = 1;
+let a = 0;
 
 plus.addEventListener("click", () => {
-    a++;
-    console.log(a);
+  a++;
+  a =  (a < 10) ? "0" + a : a;
+  num.innerText = a;
+  
 });
+
+minus.addEventListener("click", () => {
+    if(a > 10) {
+      a--;
+      a = (a < 10) ? "0" + a : a;
+      num.innerText = a;
+      console.log(a)
+    }
+});
+
+
 
 function myFunction() {
   if (openNav.style.display === "block") {

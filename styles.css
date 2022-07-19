@@ -228,6 +228,7 @@ html    {
     .hamburger {
         display: none;
     }
+    
 }   
 
 
@@ -379,9 +380,12 @@ html    {
       }
       .topnav {
         display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-left: 30rem;
       }
       .topnav {
-        width: 70vw;
+        width: 80vw;
     }
 
 
