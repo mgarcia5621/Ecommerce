@@ -12,15 +12,15 @@ let a = 0;
 
 plus.addEventListener("click", () => {
   a++;
-  a =  (a < 10) ? "0" + a : a;
+  // a =  (a < 10) ? "0" + a : a;
   num.innerText = a;
   
 });
 
 minus.addEventListener("click", () => {
-    if(a > 10) {
+    if(a > 0) {
       a--;
-      a = (a < 10) ? "0" + a : a;
+      // a = (a < 10) ? "0" + a : a;
       num.innerText = a;
       console.log(a)
     }

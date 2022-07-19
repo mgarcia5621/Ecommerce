@@ -162,10 +162,14 @@ html    {
 
 .minus {
     display: flex;
+    cursor: pointer;
+    padding: .5rem;
 }
 
 .plus {
     display: flex;
+    cursor: pointer;
+    padding: .5rem;
 }
 
 .discount-strike {
