@@ -9,7 +9,12 @@ let overlay = document.getElementById('overlay');
 let num = document.querySelector('.num');
 let minus = document.querySelector('.minus');
 let a = 0;
+let img = document.getElementById("myImg");
+let modalImg = document.getElementById("img01");
+let captionText = document.getElementById("caption");
+let modal = document.getElementById("myModal");
 
+let span = document.getElementsByClassName("close")[0];
 plus.addEventListener("click", () => {
   a++;
   // a =  (a < 10) ? "0" + a : a;
@@ -52,3 +57,12 @@ openNav.addEventListener('click', () => {
   console.log('Clicked hamburger');
 })
 
+
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
