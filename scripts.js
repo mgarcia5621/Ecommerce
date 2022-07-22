@@ -9,12 +9,7 @@ let overlay = document.getElementById('overlay');
 let num = document.querySelector('.num');
 let minus = document.querySelector('.minus');
 let a = 0;
-let img = document.getElementById("myImg");
-let modalImg = document.getElementById("img01");
-let captionText = document.getElementById("caption");
-let modal = document.getElementById("myModal");
 
-let span = document.getElementsByClassName("close")[0];
 plus.addEventListener("click", () => {
   a++;
   // a =  (a < 10) ? "0" + a : a;
@@ -58,11 +53,37 @@ openNav.addEventListener('click', () => {
 })
 
 
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
-span.onclick = function() {
-  modal.style.display = "none";
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
+
+
+
+function showSlides(n) {
+  let i = 1;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    // slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+

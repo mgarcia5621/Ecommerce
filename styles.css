@@ -81,22 +81,22 @@ html    {
     width: fit-content;
 }
 
-.img-1 {
+#img-1 {
     width: 8rem;
     border-radius: 1.3rem;
 }
 
-.img-2 {
+#img-2 {
     width: 8rem;
     border-radius: 1.3rem;
 }
 
-.img-3 {
+#img-3 {
     width: 8rem;
     border-radius: 1.3rem;
 }
 
-.img-4 {
+#img-4 {
     width: 8rem;
     border-radius: 1.3rem;
 }
@@ -265,7 +265,14 @@ html    {
     width: 80%;
     max-width: 700px;
   }
+  .demo {
+    opacity: 0.6;
+  }
   
+  .active,
+.demo:hover {
+  opacity: 1;
+}
   
   
   /* Add Animation - Zoom in the Modal */

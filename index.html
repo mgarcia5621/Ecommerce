@@ -52,10 +52,7 @@
 <div class="container">
   <div class="main-container">
     <div class="box1"><img id="myImg" src="/images/image-product-1.jpg" alt="">
-      <div class="myModal" id="myModal">
-        <span class="close">&times;</span>
-        <img src="" alt="" id="img01" class="modal-content">
-      </div>
+
     </div>
     <div class="box2">
       <h2 class="sneaker-company">Sneaker Company</h2>
@@ -80,10 +77,26 @@
     </div>
     <div class="box3">
       <div class="carousel">
-        <img class="img-1" src="/images/image-product-1.jpg" alt="shoe1">
-        <img class="img-2" src="/images/image-product-2.jpg" alt="shoe2">
-        <img class="img-3" src="/images/image-product-3.jpg" alt="shoe3">
-        <img class="img-4" src="/images/image-product-4.jpg" alt="shoe4">
+        <div class="mySlides">
+          <button onclick="currentSlide(1)" style="border: none;">
+            <img id="img-1" class="demo cursor" src="/images/image-product-1.jpg" alt="shoe1">
+          </button>
+        </div>
+        <div class="mySlides">
+          <button onclick="currentSlide(2)" style="border: none;">
+            <img id="img-2" class="demo cursor" src="/images/image-product-2.jpg" alt="shoe2">
+          </button>
+        </div>
+        <div class="mySlides">
+          <button onclick="currentSlide(3)" style="border: none;">
+            <img id="img-3" class="demo cursor" src="/images/image-product-3.jpg" alt="shoe3">
+          </button>
+        </div>
+        <div class="mySlides">
+          <button style="border: none;" onclick="currentSlide(4)">
+            <img id="img-4" class="demo cursor" src="/images/image-product-4.jpg" alt="shoe4">
+          </button>
+        </div>
       </div>
     </div>
     
