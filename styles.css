@@ -46,6 +46,7 @@ html    {
     text-decoration: none;
     font-size: 17px;
     transition: all 0.2s ease;
+    margin-bottom: -16px;
 }
 
 .topnav a:hover {
@@ -325,9 +326,7 @@ html    {
         border-bottom: 1px solid rgb(209, 209, 209);
     }
 
-    #myLinks {
-        border-bottom: 1px solid rgb(209, 209, 209);
-    }
+    
     .log-reg {
         padding-left: 20px;
     }
@@ -536,63 +535,7 @@ html    {
   cursor: pointer;
 }
 
-/* .nav-container {
-    display: inline-block;
-    position: relative;
-    color: black;
-  }
-  
-  .nav-container:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .nav-container:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }   */
-/* 
-  .nav-container {
-    width: 100%;
-  }
-  
-  .nav-container  {
-    background-color: #2C3840;
-  }
-  
-  .nav-container a {
-    color: black;
-  }
-  
-  .nav-container {
-    position: relative;
-  }
-  
-  .nav-container::after {
-    content: "";
-    position: absolute;
-    top: calc(100% - 0.125rem);
-    border-bottom: 0.125rem solid black;
-    left: 50%;
-    right: 50%;
-    transition: all 0.5s ease;
-  }
-  
-  .nav-container:hover::after {
-    left: 0;
-    right: 0;
-    transition: all 0.5s ease;
-  }
-   */
 
    .topnav a:hover {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgb(219, 145, 7);
   }
