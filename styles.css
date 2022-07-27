@@ -50,7 +50,7 @@ html    {
 
 .topnav a:hover {
     color: black;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 
@@ -322,6 +322,11 @@ html    {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        border-bottom: 1px solid rgb(209, 209, 209);
+    }
+
+    #myLinks {
+        border-bottom: 1px solid rgb(209, 209, 209);
     }
     .log-reg {
         padding-left: 20px;
@@ -554,7 +559,7 @@ html    {
     transform: scaleX(1);
     transform-origin: bottom left;
   }   */
-
+/* 
   .nav-container {
     width: 100%;
   }
@@ -565,7 +570,6 @@ html    {
   
   .nav-container a {
     color: black;
-    /* padding: 1.2rem 1.5rem; */
   }
   
   .nav-container {
@@ -587,4 +591,8 @@ html    {
     right: 0;
     transition: all 0.5s ease;
   }
-  
+   */
+
+   .topnav a:hover {
+    border-bottom: 3px solid red;
+  }
