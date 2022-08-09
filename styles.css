@@ -315,9 +315,8 @@ html    {
     .box2 {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding-right: 0px;
-        /* padding-left: 82px; */
     }   
 
     .box3 {
@@ -337,6 +336,9 @@ html    {
         width: 80vw;
         font-size: 9px;
         padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 
     .price {
@@ -360,10 +362,6 @@ html    {
         display: none;
     }
 
-    .sneaker-company {
-        padding-left: 20px;
-    }
-
     .sneaker-info {
         width: 24em;
         padding: 20px;
@@ -375,7 +373,7 @@ html    {
         position: fixed;
         z-index: 10;
         top: 0;
-        /* left: 0; */
+        display: none;
         background: white;
         overflow-x: hidden;
         padding-top: 60px;
@@ -395,7 +393,6 @@ html    {
         z-index: 2; 
         cursor: pointer; 
       }
-
   }
 
 
@@ -430,8 +427,6 @@ html    {
    .topnav a:hover {
     border-bottom: 3px solid rgb(219, 145, 7);
   }
-
-
 
 
   
