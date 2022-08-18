@@ -247,8 +247,17 @@ html    {
   opacity: 1;
 }
 
-.wrapper-dec-inc {
-    
+.counter-container span {
+    user-select: none;
+    position: absolute;
+    background: red;
+    width: 1.3rem;
+    border-radius: 50%;
+    font-size: 9px;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .login {
