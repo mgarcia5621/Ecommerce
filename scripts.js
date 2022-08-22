@@ -9,6 +9,21 @@ let overlay = document.getElementById('overlay');
 let num = document.querySelector('.num');
 let minus = document.querySelector('.minus');
 let a = 0;
+let count = 0;
+
+const counter = document.getElementById('counter');
+document.getElementById('.add-animation').addEventListener('click', event => {
+  const cl = counter.classlist;
+  const c  = 'animated-counter';
+  count++;
+
+  counter.innerText = count;
+  cl.remove(c, cl.contains(c));
+  setTimeout(()
+  counter.classList.add('animated-counter')
+  ,1)
+})
+
 
 plus.addEventListener("click", () => {
   a++;
@@ -114,3 +129,5 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+

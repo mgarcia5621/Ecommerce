@@ -266,13 +266,9 @@ html    {
     display: none;
 }
 
-.counter-container span .add-animation {
+/* .counter-container span .add-animation {
     animation: count .4s ease-in-out
-}
-
-@keyframes count {
-    
-}
+} */
 
 .login {
     display: flex;    
