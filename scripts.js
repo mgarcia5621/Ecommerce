@@ -19,7 +19,7 @@ document.getElementById('.add-animation').addEventListener('click', event => {
 
   counter.innerText = count;
   cl.remove(c, cl.contains(c));
-  setTimeout(()
+  setTimeout()(
   counter.classList.add('animated-counter')
   ,1)
 })
@@ -68,16 +68,6 @@ openNav.addEventListener('click', () => {
 })
 // end of burger code
 
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -111,23 +101,5 @@ function showSlides(n) {
 
 
 
-
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
 
 
